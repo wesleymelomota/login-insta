@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+/*flex container*/
+.main .flex-container {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    width: 60%;
+}
+
+.main .flex-container .logo-main {
+    height: 100%;
+    max-width: 700px;
+    margin: 0;
+    display: block;
+    align-items: center;
+    justify-content: space-around;    
+    max-width: 35%;
+}
+
+.main .flex-container .phone{
+    height: 50rem;
+   
+    width: 100%;
+}
+
+.main .flex-container .phone img{
+    height: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.main .flex-container .logo-main .logar{
+    display: block;
+    flex-direction: column;
+    border: 1px solid rgb(117, 117, 117);
+    max-width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 30px;
+    /*height: 100%;*/
+    height: 50%;
+    
+}
+/*logo*/
+.main .flex-container .logo-main .logar .logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*input*/
+.main .flex-container .logo-main .logar .input{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+    height: 8%;
+}
+.main .flex-container .logo-main .logar .input input{
+    width: 80%;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 3px;
+}
+/*botão entrar*/
+.main .flex-container .logo-main .logar .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.main .flex-container .logo-main .logar .btn button{
+    width: 80%;
+    background-color: rgb(45, 134, 236);
+    color:#fff;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 30px;
+    box-shadow: 1px 1px black;
+
+}
+/*links*/
+.main .flex-container .logo-main .logar .links{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-content: space-around;
+    margin-top: 10px;
+    height: 20%;
+    margin: 10px;
+}
+
+.main .flex-container .logo-main .logar .links a{
+    text-decoration: none;
+    color:rgb(0, 110, 255);
+    
+}
+/*cadastrar*/
+.main .flex-container .cadastrar {
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid rgb(117, 117, 117);
+    width: 100%;
+    height: 9%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.main .flex-container .cadastrar a {
+    text-decoration: none;
+    font-size: 17px;
+    margin: 10px;
+    color:rgb(0, 110, 255);
+}
+/*div download*/
+.main .flex-container .download {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+.main .flex-container .download .botoesDown{
+    display: flex;
+    justify-content: center;
+}
+.main .flex-container .download .botoesDown img{
+    max-width: 50%;
+    height: 50%;
+    margin-top: 30px;
+}
+.img-dow {
+    max-width: 100%;
+    height: 100%;
+}
+/*divisão logar*/
+.main .flex-container .logo-main .logar .dividir{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main .flex-container .logo-main .logar .dividir hr{
+    width: 40%;
+
+}
+
+
+.main .flex-container .logar .logo img {
+    width: 200px;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+
+@media(max-width: 768px){
+    .main .flex-container .phone{
+        display: none;
+    }
+    .main .flex-container {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+    }
+    .main .flex-container .logo-main .logar{
+        display: block;
+        flex-direction: column;
+        border: 1px solid rgb(117, 117, 117);
+        max-width: 100%;
+        justify-content: center;
+        background-color: #fff;
+        margin-top: 30px;
+        height: 70%;
+        
+    }
+}
+
+@media(max-width: 480px){
+    .main .flex-container .logo-main .logar .logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .main .flex-container .logo-main .logar .logo img{
+        max-width: 100%;
+        height: 100%;
+    }
+    .main .flex-container {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+    }
+    .main .flex-container .logo-main .logar .links{
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+        align-content: space-around;
+        margin-top: 10px;
+        height: 30%;
+        text-align: center;
+        margin: 10px;
+        width: 100%;
+    }
+    
+    .main .flex-container {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+    }
+    .main .flex-container .logo-main .logar .dividir{
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .main .flex-container .logo-main .logar .dividir hr{
+        width: 20%;
+    
+    }
+    .main .flex-container .cadastrar {
+        margin-top: 30px;
+        display: block;
+        border: 1px solid rgb(117, 117, 117);
+        width: 100%;
+        height: 9%;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main .flex-container .cadastrar a {
+        text-decoration: none;
+        font-size: 17px;
+        margin: 10px;
+        color:rgb(0, 110, 255);
+    }
+    
+}
